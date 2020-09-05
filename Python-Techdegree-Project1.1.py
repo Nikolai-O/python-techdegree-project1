@@ -17,6 +17,7 @@ def start_game():
             answer = int(input("-Please enter a number between 1 and 10: "))
             if answer < 1 or answer > 10:
                 raise ValueError("Number must be between 1 and 10.")
+        
         except ValueError as err:
             print("That is not a valid entry. Please enter a number between 1 and 10.")
             print("({})".format(err))
